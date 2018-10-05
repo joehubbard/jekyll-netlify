@@ -1,6 +1,6 @@
 backend:
-  name: jekyll-netlify
-  repo: jekyll-netlify
+  name: git-gateway
+  repo: joehubbard/jekyll-netlify
   branch: master
   site_domain: inspiring-volhard-73b885.netlify.com/
 
