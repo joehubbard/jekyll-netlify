@@ -6,4 +6,4 @@ title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
 
 cidunt mollis elementum. **Donec** volutpat justo cursus ante aliquet, ac venenatis lectus volutpat. [Curabitur](/)
 
-![](/images/uploads/img_7903-5.jpg)
+![vans](/images/uploads/img_7903-5.jpg)
