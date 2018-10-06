@@ -1,6 +1,6 @@
 ---
 layout: default
 title: asdasd
-permalink: //
+permalink: string
 ---
 asdasdasd
