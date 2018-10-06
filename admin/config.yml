@@ -23,7 +23,7 @@ collections:
     create: true
     slug: ".md"
     fields:
-      - {label: "Layout", name: "layout", widget: "select", options: ["about", "blog", "contact", "gallery", "page"]}
+      - {label: "Layout", name: "layout", widget: "select", options: ["default", "page"]}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Permalink", name: "permalink", widget: "hidden", default: "//"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
