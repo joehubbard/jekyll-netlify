@@ -5,7 +5,10 @@ backend:
   site_domain: inspiring-volhard-73b885.netlify.com/
 
 media_folder: "images/uploads"
+
 collections:
+
+# POSTS
   - name: "post" # Used in routes, e.g. /admin/collections/blog
     label: "Post" # Used in the UI
     folder: "_posts" # The path to the folder where the documents are stored
@@ -17,21 +20,17 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Featured Image", name: "image", widget: "image"}
 
+# PAGES
   - name: "page"
     label: "Page"
-    folder: "_pages"
-    create: true
-    slug: "{{permalink}}"
+    folder: "pages"
+    sort: "title:asc"
+    create: false
+    slug: "{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "select", options: ["default", "page"]}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Permalink", name: "permalink", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
-
-  - name: "layouts"
-    label: "Layouts"
-    folder: "_layouts"
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
-      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Permalink", name: "permalink", widget: "hidden"}
+      - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
