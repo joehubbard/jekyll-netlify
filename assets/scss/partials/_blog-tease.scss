@@ -1,0 +1,43 @@
+a.card{
+    text-decoration: none;
+    &:hover{
+        .blog-tease{
+            text-decoration: none;
+            transform: translate(0, -10px);
+            box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+        }
+    }
+    .blog-tease{
+        background: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+        position: relative;
+        padding-bottom: 55px;
+        display: block;
+        transition: 150ms ease-in-out all;
+
+        &__image{
+            background-size: cover;
+            background-image: url('/assets/images/shoes.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 200px;
+        }
+        &__title{
+            padding: 10px;
+        }
+        &__excerpt{
+            padding: 0 10px;
+            color: #91979e;
+            &:hover{
+                text-decoration: none;
+                color: #91979e;
+            }
+        }
+    }
+}
+
+.recent-posts{
+    h2{
+        margin-bottom: 30px;
+    }
+}

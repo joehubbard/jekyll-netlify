@@ -1,0 +1,18 @@
+<section class="recent-posts">
+    <h2>Recent posts</h2>
+    <div class="row">
+    {% for post in site.posts %}
+    <div class="col-sm-4">
+        <a href="{{post.url}}" class="card">
+            <div class="blog-tease">
+                <div class="blog-tease__image" {% if post.featured_image %}style="background-image: url({{post.featured_image}})"{% endif %}></div>
+                {% if post.title %}
+                <h3 class="blog-tease__title">{{post.title}}</h3>
+                <p class="blog-tease__excerpt">{{ post.content | strip_html | truncatewords:20 }}</p>
+                {% endif %}
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+</section>

@@ -1,27 +1,22 @@
+--- 
+layout: compress 
 ---
-layout: compress
----
-
 <!DOCTYPE html>
 <html data-current="{{ page.section }}" lang="en">
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
     {% include header.html %}
 
     <main class="page-content">
-        <div class="wrapper">
+        <div class="container">
             <div class="home">
-                {{ content }}
+                {% include recent-posts.html %}
             </div>
         </div>
     </main>
 
-    {% include footer.html %}
+    {% include footer.html %} {% include scripts.html %}
 
-    {% include scripts.html %}
-
-  </body>
-
-</html>
+</body>

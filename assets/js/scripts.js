@@ -4,4 +4,6 @@ $(function() {
     Pace.on('done', function() {
         $('.site-border').addClass('show');
     });
+
+    $('.blog-tease').matchHeight();
 });
